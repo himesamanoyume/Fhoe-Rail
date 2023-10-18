@@ -115,5 +115,8 @@ class Map:
                 total_processing_time += processing_time
                 log.info(f"{map_}用时\033[1;92m『{formatted_time}』\033[0m,总计:\033[1;92m『{self.format_time(total_processing_time)}』\033[0m")
 
+                if total_processing_time >= 360:
+                    log.info(f'短时间锄大地时间已到,结束任务')
+                    return
         else:
             log.info(f'地图编号 {start} 不存在，请尝试检查地图文件')
