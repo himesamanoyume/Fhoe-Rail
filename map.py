@@ -81,6 +81,12 @@ class Map:
             for map_ in map_list:
                 # 选择地图
                 map_ = map_.split('.')[0]
+
+                # 限制地图提前结束
+                if map_ == 'map_1-2_3':
+                    log.info(f'锄大地所需地图全部完成,提前结束任务')
+                    return
+                
                 map_data = read_json_file(f"map/{map_}.json")
                 webhook_and_log(f"\033[0;96;40m{map_data['name']}\033[0m")
                 self.calculated.monthly_pass()
@@ -117,7 +123,7 @@ class Map:
                 log.info(f"{map_}用时\033[1;92m『{formatted_time}』\033[0m,总计:\033[1;92m『{self.format_time(total_processing_time)}』\033[0m")
 
                 # 锄大地时间限制
-                if total_processing_time >= 240:
+                if total_processing_time >= 300:
                     log.info(f'短时间锄大地时间已到,结束任务')
                     return
         else:

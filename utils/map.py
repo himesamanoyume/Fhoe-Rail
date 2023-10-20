@@ -26,7 +26,7 @@ class Map:
             if result['max_val'] > 0.97:
                 points = self.calculated.calculated(result, target.shape)
                 log.debug(points)
-                pyautogui.click(points, clicks=5, interval=0.1)
+                pyautogui.click(points, clicks=10, interval=0.1)
                 break
             else:
                 attempts += 1
@@ -116,7 +116,7 @@ class Map:
                 log.info(f"{map_}用时\033[1;92m『{formatted_time}』\033[0m,总计:\033[1;92m『{self.format_time(total_processing_time)}』\033[0m")
 
                 # 锄大地时间限制
-                if total_processing_time >= 240:
+                if total_processing_time >= 300:
                     log.info(f'短时间锄大地时间已到,结束任务')
                     return
         else:
