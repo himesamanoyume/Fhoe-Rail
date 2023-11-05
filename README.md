@@ -2,6 +2,12 @@
 
 聚合使用请去：https://github.com/moesnow/March7thAssistant
 
+同类程序可以去：https://github.com/DoctorReid/StarRailAutoProxy
+
+模拟器运行请去：https://github.com/LmeSzinc/StarRailCopilot
+
+注：当StarRailCopilot项目彻底完善后，本程序将永久停止更新
+
 ### 免责声明
 
 本软件是一个外部工具旨在自动化崩坏星轨的游戏玩法。它被设计成仅通过现有用户界面与游戏交互,并遵守相关法律法规。该软件包旨在提供简化和用户通过功能与游戏交互,并且它不打算以任何方式破坏游戏平衡或提供任何不公平的优势。该软件包不会以任何方式修改任何游戏文件或游戏代码。
@@ -19,9 +25,12 @@ This software is open source, free of charge and for learning and exchange purpo
 
 ### 功能区分
 
-- 跑完关机
-- 时间记录
-- 使用秘技
+- 相比原版更轻量，启动更快
+- 但是相对缺失了一些功能
+- 但同时我又增加了原版没有的功能
+- 比如：跑完关机、使用秘技、自动启动
+
+自动启动的使用方法：把星铁的快捷方式（不是启动器），放到map文件夹中，运行启动器后就无需操作了，脚本会自动启动游戏（目前无法应对有更新的情况）
 
 ### 键位映射
 
